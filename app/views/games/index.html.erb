@@ -1,4 +1,62 @@
-<h1>Games#index</h1>
-<p>Find me in app/views/games/index.html.erb</p>
-
-<%= javascript_include_tag "index.js" %>
+<div class="games-container">
+    <section class="intro-paragraph">
+        <p>Welcome to <span class="purple-text">Amara's JS Games</span> suite.</p>
+        <p>Designed and developed to make life fun for you.</p>
+    </section>
+    <section class="games-links">
+        <%= link_to memory_game_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p class="link-name">Memory Game</p>
+            </div>
+        <% end %>
+        <%= link_to rock_paper_scissors_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <p class="link-name">R.P.S Game</p>
+            </div>
+        <% end %>
+        <%= link_to whac_a_mole_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-hammer"></i>
+                <p class="link-name">Whac-a-Mole</p>
+            </div>
+        <% end %>
+        <%= link_to breakout_game_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-bowling-ball"></i>
+                <p class="link-name">Breakout Game</p>
+            </div>
+        <% end %>
+        <%= link_to connect_four_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-calculator"></i>
+                <p class="link-name">Connect Four</p>
+            </div>
+        <% end %>
+        <%= link_to space_invaders_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-rocket"></i>
+                <p class="link-name">Space Invaders</p>
+            </div>
+        <% end %>
+        <%= link_to frogger_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-frog"></i>
+                <p class="link-name">Frogger</p>
+            </div>
+        <% end %>
+        <%= link_to chess_path do %>
+            <div class="active-game-link">
+                <i class="fa-solid fa-chess"></i>
+                <p class="link-name">Chess</p>
+            </div>
+        <% end %>
+        <%= link_to candy_crush_path do %>
+            <div class="active-game-link text-light">
+                <i class="fa-solid fa-square"></i>
+                <p class="link-name">Candy Crush</p>
+            </div>
+        <% end %>
+    </section>
+</div>

@@ -1,0 +1,121 @@
+@import "variables";
+
+* {
+    // border: 0.5px red solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #333333;
+    color: #bdbdbd;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+ }
+ 
+ body {
+    height: 100%;
+    position: relative;
+ 
+ }
+ 
+ .yield-content {
+    min-height: calc(100vh - 200px);
+    margin-top: 100.93px;
+    margin-bottom: 100px;
+ }
+ 
+ header {
+    height: 100.93px;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+ }
+ 
+ .footer {
+    height: 139.08px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0
+ }
+ 
+ @media screen and (min-width: $screen-mnw) {
+    .footer {
+       height: 87.08px;
+    }
+ }
+
+.games-container {
+    height: 500px;
+    margin: 0px 16px;
+
+
+    .intro-paragraph {
+        padding: 24px 0px;
+        width: 343px;
+        margin: 0px auto;
+        line-height: 27px;
+        
+        .purple-text {
+            color: #BB6BD9;
+        }
+    }
+
+    .games-links {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        gap: 16px 16px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .active-game-link, .inactive-game-link {
+        width: 103.67px;
+        height: 109px;
+        border-radius: 8px;
+        border: 1px solid;
+        
+        i {
+            font-size: 24px;
+            display: inline-flex;
+            align-items: center;
+            height: 36px;
+            width: 24px;
+            margin-top: 15.5px;
+
+        }
+
+        .link-name {
+            width: 73px;
+            line-height: 21px;
+            margin-left: 16px;
+        }
+    }
+
+    .inactive-game-link {
+        opacity: .2;
+    }
+}
+
+@media screen and (min-width: $screen-mnw) {
+    .games-container {
+        display: inline-block;
+        margin: 50px 0px;
+
+        .intro-paragraph {
+            width: 388px;
+        }
+
+        .active-game-link, .inactive-game-link {
+            width: 109px;
+            height: 109px;
+        }
+
+        .games-links {
+            gap: 24px 24px;
+        }
+    }
+    
+    
+}
