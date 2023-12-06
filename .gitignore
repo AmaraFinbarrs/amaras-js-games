@@ -38,3 +38,6 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Ignore secret_things
+/config/secret_things.yml
