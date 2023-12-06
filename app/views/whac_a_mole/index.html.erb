@@ -1,2 +1,19 @@
-<h1>WhacAMole#index</h1>
-<p>Find me in app/views/whac_a_mole/index.html.erb</p>
+<main class="whac-a-mole container">
+    <h2>Your score: <span id="score">0</span> </h2>
+
+    <h2>Time Left: <span id="time-left">60</span> </h2>
+
+    <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square mole" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>
+</main>
+
+<%= javascript_include_tag "whac-a-mole" %>
