@@ -5,48 +5,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #333333;
     color: #bdbdbd;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
  }
  
  body {
     height: 100%;
     position: relative;
- 
+    background: #333333;
  }
  
- .yield-content {
-    min-height: calc(100vh - 200px);
-    margin-top: 100.93px;
-    margin-bottom: 100px;
- }
- 
- header {
-    height: 100.93px;
-    width: 100%;
-    position: fixed;
-    top: 0; 
- }
- 
- .footer {
-    height: 139.08px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0
- }
- 
- @media screen and (min-width: $screen-mnw) {
-    .footer {
-       height: 87.08px;
-    }
- }
-
 .games-container {
     height: 500px;
-    margin: 0px 16px;
+    text-align: center;
+    margin: auto;
 
 
     .intro-paragraph {
@@ -100,8 +72,9 @@
 
 @media screen and (min-width: $screen-mnw) {
     .games-container {
-        display: inline-block;
-        margin: 50px 0px;
+        text-align: center;
+        margin: 50px auto;
+
 
         .intro-paragraph {
             width: 388px;

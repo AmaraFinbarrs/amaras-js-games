@@ -1,9 +1,10 @@
 @import "variables";
 
 .footer-container {
-    position: relative;
     width: 100%;
-    height: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .footer-item {
@@ -24,6 +25,9 @@
 }
 
 @media screen and (min-width: $screen-mnw) {
+    .footer-container{
+        height: 87.08px;
+    }
     .footer-item-1 {
         margin: 0px 120px 0px 120px;
     }
