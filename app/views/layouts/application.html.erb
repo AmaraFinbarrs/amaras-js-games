@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AmarasJsGames</title>
+    <title>Amaras Js Games</title>
     <%= favicon_link_tag asset_path('ajg-favicon.png') %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -16,12 +16,10 @@
   </head>
 
   <body>
-    <header><%= render 'shared/navbar'%></header>
+    <%= render 'shared/navbar'%>
 
-    <main class="yield-content">
-      <%= yield %>
-    </main>
+    <%= yield %>
 
-    <div class="footer"><%= render 'shared/footer'%><div>
+    <%= render 'shared/footer'%>
   </body>
 </html>
